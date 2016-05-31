@@ -84,16 +84,43 @@
 
 
 
-<meta name="description" content="Activity启动模式1.standard：每次启动一个Activity都会在当前任务栈创建一个新的实例2.singleTop：栈顶的Activity不会重复创建3.singleTask：站内的Activity都不会重复创建4.singleInstance：有且只能有一个实例，并且该实例只能单独在一个任务栈中特殊情况1.后台任务栈AB，前台任务栈CD，CD均为singleTask。现在请求D，整">
+<meta name="description" content="Activity启动模式
+
+standard：每次启动一个Activity都会在当前任务栈创建一个新的实例
+singleTop：栈顶的Activity不会重复创建
+singleTask：站内的Activity都不会重复创建
+singleInstance：有且只能有一个实例，并且该实例只能单独在一个任务栈中
+
+特殊情况
+
+后台任务栈AB，前台任务栈CD，CD均为singleTask。现在请求D，整个">
 <meta property="og:type" content="article">
 <meta property="og:title" content="《Android开发艺术探索》读书笔记笔记1.2——Activity启动模式">
 <meta property="og:url" content="http://yoursite.com/2016/05/31/《Android开发艺术探索》读书笔记1-2——Activity启动模式/index.html">
 <meta property="og:site_name" content="x1ong zhu's notes">
-<meta property="og:description" content="Activity启动模式1.standard：每次启动一个Activity都会在当前任务栈创建一个新的实例2.singleTop：栈顶的Activity不会重复创建3.singleTask：站内的Activity都不会重复创建4.singleInstance：有且只能有一个实例，并且该实例只能单独在一个任务栈中特殊情况1.后台任务栈AB，前台任务栈CD，CD均为singleTask。现在请求D，整">
-<meta property="og:updated_time" content="2016-05-31T07:04:47.321Z">
+<meta property="og:description" content="Activity启动模式
+
+standard：每次启动一个Activity都会在当前任务栈创建一个新的实例
+singleTop：栈顶的Activity不会重复创建
+singleTask：站内的Activity都不会重复创建
+singleInstance：有且只能有一个实例，并且该实例只能单独在一个任务栈中
+
+特殊情况
+
+后台任务栈AB，前台任务栈CD，CD均为singleTask。现在请求D，整个">
+<meta property="og:updated_time" content="2016-05-31T14:59:08.731Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="《Android开发艺术探索》读书笔记笔记1.2——Activity启动模式">
-<meta name="twitter:description" content="Activity启动模式1.standard：每次启动一个Activity都会在当前任务栈创建一个新的实例2.singleTop：栈顶的Activity不会重复创建3.singleTask：站内的Activity都不会重复创建4.singleInstance：有且只能有一个实例，并且该实例只能单独在一个任务栈中特殊情况1.后台任务栈AB，前台任务栈CD，CD均为singleTask。现在请求D，整">
+<meta name="twitter:description" content="Activity启动模式
+
+standard：每次启动一个Activity都会在当前任务栈创建一个新的实例
+singleTop：栈顶的Activity不会重复创建
+singleTask：站内的Activity都不会重复创建
+singleInstance：有且只能有一个实例，并且该实例只能单独在一个任务栈中
+
+特殊情况
+
+后台任务栈AB，前台任务栈CD，CD均为singleTask。现在请求D，整个">
 
 
 
@@ -288,7 +315,18 @@
       
 
       
-        <p><strong>Activity启动模式</strong><br>1.standard：每次启动一个Activity都会在当前任务栈创建一个新的实例<br>2.singleTop：栈顶的Activity不会重复创建<br>3.singleTask：站内的Activity都不会重复创建<br>4.singleInstance：有且只能有一个实例，并且该实例只能单独在一个任务栈中<br><strong>特殊情况</strong><br>1.后台任务栈AB，前台任务栈CD，CD均为singleTask。现在请求D，整个后台任务栈会切换到前台，此时整个后退列表办变了ABCD<br>2.后台任务栈AB，前台任务栈CD，CD均为singleTask。现在请求C，此时整个后退列表变成了ABC</p>
+        <p><strong>Activity启动模式</strong></p>
+<ol>
+<li>standard：每次启动一个Activity都会在当前任务栈创建一个新的实例</li>
+<li>singleTop：栈顶的Activity不会重复创建</li>
+<li>singleTask：站内的Activity都不会重复创建</li>
+<li>singleInstance：有且只能有一个实例，并且该实例只能单独在一个任务栈中</li>
+</ol>
+<p><strong>特殊情况</strong></p>
+<ol>
+<li>后台任务栈AB，前台任务栈CD，CD均为singleTask。现在请求D，整个后台任务栈会切换到前台，此时整个后退列表办变了ABCD</li>
+<li>后台任务栈AB，前台任务栈CD，CD均为singleTask。现在请求C，此时整个后退列表变成了ABC</li>
+</ol>
 
       
     </div>
