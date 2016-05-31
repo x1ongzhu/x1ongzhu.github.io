@@ -520,13 +520,13 @@
             <p><strong>Activity的生命周期</strong></p>
 <p><img src="http://o810fzghu.bkt.clouddn.com/c856613e6709c93dfac12f0d9d3df8dcd00054dd.jpg" alt="Activity生命周期"></p>
 <ol>
-<li>onCreate：Activity正在创建，此时Activity处于不可见不可交互状态。此方法中主要进行一些数据初始化，加载布局等操作。</li>
-<li>onRestart：Activity重新启动</li>
-<li>onStart：Activity正在启动，此时Activity处于可见但不可交互状态。可以理解为Activity已经显示出来了，但还没有显示到前台来。</li>
-<li>onResume：此时Activity已经可见并处于前台，用户最终见到的Activity就处于这个状态。</li>
-<li>onPause：正在停止Activity，此时处于可见但不可交互状态。当打开一个新的Activity时，会先执行旧Activity的onPause在执行新Activity的onResume。</li>
-<li>onStop：Activity即将停止，此时已处于不可见状态，可进行一些轻量的回收工作，不能太耗时。需要注意：如果新的Activity采用了透明主题，则不会执行onStop。</li>
-<li>onDestroy：Activity即将被销毁，可进行最终的回收和资源释放工作。</li>
+<li>onCreate<br>Activity正在创建，此时Activity处于不可见不可交互状态。此方法中主要进行一些数据初始化，加载布局等操作。</li>
+<li>onRestart<br>Activity重新启动</li>
+<li>onStart<br>Activity正在启动，此时Activity处于可见但不可交互状态。可以理解为Activity已经显示出来了，但还没有显示到前台来。</li>
+<li>onResume<br>此时Activity已经可见并处于前台，用户最终见到的Activity就处于这个状态。</li>
+<li>onPause<br>正在停止Activity，此时处于可见但不可交互状态。当打开一个新的Activity时，会先执行旧Activity的onPause在执行新Activity的onResume。</li>
+<li>onStop<br>Activity即将停止，此时已处于不可见状态，可进行一些轻量的回收工作，不能太耗时。需要注意：如果新的Activity采用了透明主题，则不会执行onStop。</li>
+<li>onDestroy<br>Activity即将被销毁，可进行最终的回收和资源释放工作。</li>
 </ol>
 <p><strong>异常情况下Activity生命周期</strong></p>
 <ol>
